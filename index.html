@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Classmate Yearbook</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="notification" class="notification" style="display: none;"></div>
+
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <img src="ixdlogo.svg" alt="IxD Logo">
+        </div><br>
+        <div class="grid">
+          <div class="text-header">
+            <h1>IxD's <br> Classmate Book</h1>
+            <p>The ultimate platform for Sheridan College<br>
+              IxD students to <span style="color: #F55822"><b>connect</b></span> and <span style="color: #CBF531"><b>learn</b></span> more<br>
+              about each other!</p> <br><br><br><br><br><br><br><br><br><br><br><br><br>
+          </div>
+          
+          <div class="image-header">
+            <img src="image1.png" alt="Logo iteration">
+          </div>
+        </div>
+      </div>
+
+      <!-- Starting the code for running banner retrieved from Felix LeClair on CodePen https://codepen.io/Camofelix/pen/MeXMPP -->
+      <div class="banner-wrapper">
+        <div class="banner">
+          <p><i>Don't be shy, come say hi </i>👋</p>
+          <p><i>Don't be shy, come say hi </i>👩‍💻</p>
+          <p><i>Don't be shy, come say hi </i>🫶</p>
+          <p><i>Don't be shy, come say hi </i>🎉</p>
+          <p><i>Don't be shy, come say hi </i>✨</p>
+          <p><i>Don't be shy, come say hi </i>☀️</p>
+          <p><i>Don't be shy, come say hi </i>⭐️</p>
+          <p><i>Don't be shy, come say hi </i>👾</p>
+          <p><i>Don't be shy, come say hi </i>🧑‍💻</p>
+          <p><i>Don't be shy, come say hi </i>👋</p>
+          <p><i>Don't be shy, come say hi </i>👩‍💻</p>
+          <p><i>Don't be shy, come say hi </i>🫶</p>
+          <p><i>Don't be shy, come say hi </i>🎉</p>
+          <p><i>Don't be shy, come say hi </i>✨</p>
+          <p><i>Don't be shy, come say hi </i>☀️</p>
+          <p><i>Don't be shy, come say hi </i>⭐️</p>
+          <p><i>Don't be shy, come say hi </i>👾</p>
+          <p><i>Don't be shy, come say hi </i>🧑‍💻</p> 
+          <p><i>Don't be shy, come say hi </i>👋</p>
+          <p><i>Don't be shy, come say hi </i>👩‍💻</p>
+          <p><i>Don't be shy, come say hi </i>🫶</p>
+          <p><i>Don't be shy, come say hi </i>🎉</p>
+          <p><i>Don't be shy, come say hi </i>✨</p>
+          <p><i>Don't be shy, come say hi </i>☀️</p>
+          <p><i>Don't be shy, come say hi </i>⭐️</p>
+          <p><i>Don't be shy, come say hi </i>👾</p>
+          <p><i>Don't be shy, come say hi </i>🧑‍💻</p>
+          <p><i>Don't be shy, come say hi </i>👋</p>
+          <p><i>Don't be shy, come say hi </i>👩‍💻</p>
+          <p><i>Don't be shy, come say hi </i>🫶</p>
+          <p><i>Don't be shy, come say hi </i>🎉</p>
+          <p><i>Don't be shy, come say hi </i>✨</p>
+          <p><i>Don't be shy, come say hi </i>☀️</p>
+          <p><i>Don't be shy, come say hi </i>⭐️</p>
+          <p><i>Don't be shy, come say hi </i>👾</p>
+          <p><i>Don't be shy, come say hi </i>🧑‍💻</p>
+      
+        </div>
+      </div>
+      <!-- Ending the code for running banner retrieved from Felix LeClair on CodePen https://codepen.io/Camofelix/pen/MeXMPP -->
+
+      <br><br><br><br><br><br><br><br>
+
+      <div>
+        <h1 class="title">Let's <span style="background-color:#1A4CFF; border-radius: 8px; padding: 5px;"> connect</span> now :)</h1>
+        <br><br><br><br><br><br><br><br>
+      </div>
+
+      <div class="year-buttons">
+        <button id="first-year" class="year-button">First Year</button>
+        <button id="second-year" class="year-button">Second Year</button>
+        <button id="third-year" class="year-button active">Third Year</button>
+        <button id="fourth-year" class="year-button">Fourth Year</button>
+      </div>
+
+      <!-- Starting the code retrieved from chatGPT https://chatgpt.com/share/66f306dc-49e0-8012-93ad-ab247c24b57e -->
+      <div class="loading-spinner hidden">
+        <br><br><br>
+        <img src="ixdlogo.svg" alt="Loading..." id="loadingIcon">
+      </div>
+      <!-- Ending the code retrieved from chatGPT https://chatgpt.com/share/66f306dc-49e0-8012-93ad-ab247c24b57e -->
+
+      <div id="cards-container" class="cards-container"></div>
+
+      <br><br><br><br>
+      
+      <div class="footer">
+        <p>© 2024 IxD Classmate Book</p>
+        <p>By Franzi and Kat</p>
+        <p><i>All Right Reserved</i></p>
+        <p><i>API fetching from <a href="https://unsplash.com/">Unsplash</a> and <a href="https://randomuser.me/">RandomUser</a></i></p>
+      </div>
+      <br><br>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

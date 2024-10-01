@@ -1,0 +1,312 @@
+/* General styles */
+body {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #181818;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.header {
+  width: 100%;
+  padding: 20px;
+}
+
+.logo {
+  position: sticky; 
+  top: 0; 
+  z-index: 10; 
+  background-color: #181818; 
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+  position: relative;
+}
+
+.text-header {
+  color: white;
+  text-align: left;
+  padding-left: 60px;
+  
+}
+
+.text-header h1 {
+  font-size: 65pt;
+}
+
+.text-header p {
+  font-size: 18pt;
+}
+
+.image-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+}
+
+.image-header img {
+  position: absolute;
+  width: 97%;
+  max-width: none;
+  height: auto;
+  object-fit: cover;
+  top: -60px;
+  left: -50px;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+/* Beginning the code for running banner retrieved from Felix LeClair on CodePen https://codepen.io/Camofelix/pen/MeXMPP */
+
+
+.banner-wrapper {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  padding: 10px 0;
+  white-space: nowrap;
+}
+
+.banner {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 180s linear infinite;
+}
+
+.banner p {
+  font-family: 'Inter', sans-serif;
+  font-weight: lighter;
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  padding: 0 50px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* Ending the code for running banner retrieved from Felix LeClair on CodePen https://codepen.io/Camofelix/pen/MeXMPP */
+
+/* Year buttons */
+.year-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  
+}
+
+.year-button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.year-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.year-button.active {
+  background-color: #1A4CFF;
+  color: #fff;
+}
+
+/* Cards layout */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  margin: 20px auto; 
+  justify-items: center; 
+}
+
+@media (max-width: 992px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px); /* Blur effect behind the card */
+  border: 1px solid rgba(24, 24, 24, 0.5); /* Light border for definition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  /* box-shadow: 2px 4px 10px rgba(136, 136, 136, 0.5);  */
+  text-align: center;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  margin: 15px 0;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.card-img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+
+.card-info1, .card-info2 {
+  padding:0px;
+  border: 1px solid #ffffff;
+  border-radius: 40px;
+  margin-top: 15px;
+  font-size: 1rem;
+ color: white;
+}
+
+
+
+.material-symbols-outlined {
+  margin-right: 5px;
+  font-size: 24px;
+}
+
+.svg-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.righticon svg path {
+  fill: white;
+}
+
+.icon-img {
+  width: 35px;
+}
+
+/* Starting the code retrieved from chatGPT https://chatgpt.com/share/66f306dc-49e0-8012-93ad-ab247c24b57e */
+/* Spinner below the year-buttons */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.loading-spinner img {
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hide spinner by default */
+.hidden {
+  display: none;
+}
+/* Ending the code retrieved from chatGPT https://chatgpt.com/share/66f306dc-49e0-8012-93ad-ab247c24b57e */
+
+/* Notification */
+.notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #CBF531;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.notification.show {
+  display: block;
+  opacity: 1;
+}
+
+/* Footer */
+.footer {
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none; 
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
